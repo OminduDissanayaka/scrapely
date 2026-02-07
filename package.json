@@ -1,0 +1,47 @@
+{
+  "name": "scrapely",
+  "version": "1.0.0",
+  "description": "Declarative web scraping toolkit with schema-driven extraction, pagination, caching, and data export",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "scraping",
+    "web-scraping",
+    "scraper",
+    "cheerio",
+    "axios",
+    "html-parser",
+    "web-crawler",
+    "data-extraction",
+    "pagination",
+    "csv-export",
+    "table-extraction"
+  ],
+  "author": "Omindu <hellow@omindu.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OminduDissanayaka/scrapely.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OminduDissanayaka/scrapely/issues"
+  },
+  "homepage": "https://github.com/OminduDissanayaka/scrapely#readme",
+  "dependencies": {
+    "axios": "^1.13.4",
+    "cheerio": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
