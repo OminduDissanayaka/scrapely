@@ -2,20 +2,20 @@
 
 Declarative web scraping toolkit for Node.js built on [Axios](https://github.com/axios/axios) and [Cheerio](https://github.com/cheeriojs/cheerio).
 
-[![npm version](https://img.shields.io/npm/v/scrapely)](https://www.npmjs.com/package/scrapely)
+[![npm version](https://img.shields.io/npm/v/@omindu/scrapely)](https://www.npmjs.com/package/@omindu/scrapely)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org)
 
 ## Install
 
 ```bash
-npm install scrapely
+npm install @omindu/scrapely
 ```
 
 ## Quick Start
 
 ```js
-const Scrapely = require('scrapely');
+const Scrapely = require('@omindu/scrapely');
 
 const scraper = new Scrapely();
 
@@ -217,7 +217,7 @@ scraper.setCookies('sessionId=12345; userId=user1');
 ### Quick Scrape (Stateless)
 
 ```js
-const { quickScrape } = require('scrapely');
+const { quickScrape } = require('@omindu/scrapely');
 
 const title = await quickScrape.getText('https://example.com', 'h1');
 const data  = await quickScrape.extract(url, schema);
@@ -226,7 +226,7 @@ const data  = await quickScrape.extract(url, schema);
 ### Data Utilities
 
 ```js
-const { DataUtils } = require('scrapely');
+const { DataUtils } = require('@omindu/scrapely');
 
 DataUtils.cleanText('  extra   spaces  ');        // 'extra spaces'
 DataUtils.extractNumbers('price: $12.50, qty: 3'); // [12.5, 3]
@@ -252,7 +252,7 @@ scraper.on('cacheHit', (url) => console.log('Cache hit', url));
 ### Error Handling
 
 ```js
-const { FetchError, ValidationError, ExportError } = require('scrapely');
+const { FetchError, ValidationError, ExportError } = require('@omindu/scrapely');
 
 try {
   await scraper.fetch(url);

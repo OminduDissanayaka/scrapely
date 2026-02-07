@@ -1,5 +1,5 @@
 {
-  "name": "scrapely",
+  "name": "@omindu/scrapely",
   "version": "1.0.0",
   "description": "Declarative web scraping toolkit with schema-driven extraction, pagination, caching, and data export",
   "main": "index.js",
@@ -27,7 +27,7 @@
     "csv-export",
     "table-extraction"
   ],
-  "author": "Omindu <hellow@omindu.dev>",
+  "author": "Omindu Dissanayaka <hellow@omindu.dev>",
   "license": "MIT",
   "repository": {
     "type": "git",
